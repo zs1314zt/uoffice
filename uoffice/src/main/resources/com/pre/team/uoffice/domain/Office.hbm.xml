@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.pre.team.uoffice.domain.Office"
+		table="t_office">
+		<id name="officeId" type="java.lang.Integer">
+			<column name="office_id" />
+			<generator class="identity" />
+		</id>
+		<property name="officeName" type="java.lang.String">
+			<column name="office_name"></column>
+		</property>
+		<property name="detailAddr" type="java.lang.String">
+			<column name="detail_addr"></column>
+		</property>
+		<property name="officeType" type="java.lang.String">
+			<column name="office_type"></column>
+		</property>
+		<property name="locationId" type="java.lang.String">
+			<column name="location_id"></column>
+		</property>
+		<property name="officeDesc" type="java.lang.String">
+			<column name="office_desc"></column>
+		</property>
+		<property name="officeContent" type="java.lang.String">
+			<column name="office_content"></column>
+		</property>
+		<property name="rentDate" type="java.lang.Integer">
+			<column name="rent_date"></column>
+		</property>
+		<property name="officeMoney" type="java.lang.Integer">
+			<column name="office_money"></column>
+		</property>
+		<property name="photoUrl" type="java.lang.String">
+			<column name="photo_url"></column>
+		</property>
+		<property name="officeContact" type="java.lang.String">
+			<column name="office_contact"></column>
+		</property>
+		<property name="viewCount" type="java.lang.Integer">
+			<column name="view_count"></column>
+		</property>
+		<property name="publishTime" type="java.util.Date">
+			<column name="publish_time"></column>
+		</property>
+				<property name="officeArea" type="java.lang.Integer">
+			<column name="office_area"></column>
+		</property>
+		<property name="officeSize" type="java.lang.Integer">
+			<column name="office_size"></column>
+		</property>
+		<property name="officeAdvert" type="java.lang.String">
+			<column name="office_advert"></column>
+		</property>
+		<property name="advertPhotoUrl" type="java.lang.String">
+			<column name="advert_photoUrl"></column>
+		</property>
+		<property name="eachPrice" type="java.lang.String">
+			<column name="each_price"></column>
+		</property>
+		<property name="mapDesc" type="java.lang.String">
+			<column name="map_desc"></column>
+		</property>
+		<property name="mapUrl" type="java.lang.String">
+			<column name="map_url"></column>
+		</property>
+		<property name="bannerUrl" type="java.lang.String">
+			<column name="banner_url"></column>
+		</property>
+		<property name="remark" type="java.lang.String">
+			<column name="remark"></column>
+		</property>
+	</class>
+</hibernate-mapping>

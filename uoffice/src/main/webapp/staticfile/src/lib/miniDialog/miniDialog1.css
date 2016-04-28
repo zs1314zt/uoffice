@@ -1,0 +1,133 @@
+/*!
+ * miniDialog
+ * Author: jieyou Qin
+ * see https://github.com/jieyou/miniDialog
+ */
+.miniDialog_wrapper{
+	border-radius:4px;
+	box-shadow:0 5px 15px rgba(0,0,0,.4);
+	overflow:hidden;
+	background:#fff;
+	z-index:2412;
+	font-size:14px;
+	position:fixed;
+	_position:absolute;
+	display: none;
+}
+.miniDialog_title{
+	padding:1px 8px;
+	color:#fff;
+	font-weight: bold;
+	height:36px;
+	line-height: 36px;
+	text-indent:5px;
+	background: #FF5482;
+	box-shadow: 0 -1px 3px #d64169 inset;
+}
+.miniDialog_content_outer{
+	padding:6px;
+}
+.miniDialog_content{
+	vertical-align:middle;
+}
+.miniDialog_buttons_area{
+	padding:10px;
+	height:28px;
+	text-align: center;
+}
+.miniDialog_button{
+	border:1px solid #1c6a9e;
+	border-radius:5px;
+	text-align:center;
+	padding:0 8px;
+	height:26px;
+	line-height:26px;
+	display:inline-block;
+	background:#2288cc;
+	background:-webkit-linear-gradient(top,#33bbee,#2288cc);
+	background:-moz-linear-gradient(top,#33bbee,#2288cc);
+	background:-ms-linear-gradient(top,#33bbee,#2288cc);
+	background:linear-gradient(top,#33bbee,#2288cc);
+	color:#fff;
+	text-shadow:-1px -1px 1px #1c6a9e;
+	cursor:pointer;
+	font-weight: bold;
+	outline:none;
+	margin-right: 20px;
+}
+.miniDialog_button{
+	*display:inline;
+}
+.miniDialog_last_button{
+	margin-right: 0;
+}
+.miniDialog_button_secondary{
+	background:#ddd;
+	background:-webkit-linear-gradient(top,#fff,#ddd);
+	background:-moz-linear-gradient(top,#fff,#ddd);
+	background:-ms-linear-gradient(top,#fff,#ddd);
+	background:linear-gradient(top,#fff,#ddd);
+	border: 1px solid #999;
+	text-shadow:0px 1px 1px rgba(255, 255, 255, .5);
+	color:#333;
+}
+.miniDialog_button_secondary:hover{
+	border-color:#666;
+}
+.miniDialog_button_secondary:active{
+	border-color:#666;
+	box-shadow: inset 0 1px 1em rgba(0, 0, 0, .6), inset 0 1px 1em rgba(0, 0, 0, .3);
+}
+.miniDialog_button_secondary:focus{
+	border-color:#426DC9;
+	box-shadow:0 0 8px rgba(66, 109, 201, .9);
+}
+.miniDialog_button:hover{
+	border-color:#0F3A56;
+}
+.miniDialog_button:active{
+	border-color:#1c6a9e;
+	box-shadow: inset 0 1px 1em rgba(0, 0, 0, .6), inset 0 1px 1em rgba(0, 0, 0, .3);
+}
+.miniDialog_button:focus{
+	border-color:#426DC9;
+	box-shadow:0 0 8px rgba(66, 109, 201, .9);
+}
+.miniDialog_close_x{
+	cursor:pointer;
+	position: absolute;
+	top:0;
+	right:8px;
+	width: 20px;
+	height: 38px;
+	line-height: 38px;
+	color: #fff;
+	text-align: center;
+}
+.miniDialog_close_x .iconfont{
+	font-size: 12px;
+}
+.miniDialog_mask{
+	position:fixed;
+	_position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:2399;
+    background-color:rgba(0,0,0,.6);
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.35) 15%, rgba(0,0,0,0.47) 38%, rgba(0,0,0,0.8) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0.35)), color-stop(15%,rgba(0,0,0,0.35)), color-stop(38%,rgba(0,0,0,0.47)), color-stop(100%,rgba(0,0,0,0.8))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 15%,rgba(0,0,0,0.47) 38%,rgba(0,0,0,0.8) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 15%,rgba(0,0,0,0.47) 38%,rgba(0,0,0,0.8) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 15%,rgba(0,0,0,0.47) 38%,rgba(0,0,0,0.8) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.35) 15%,rgba(0,0,0,0.47) 38%,rgba(0,0,0,0.8) 100%); /* W3C */
+    *background: #000;
+	*filter:alpha(opacity:60);
+}
+@media \0screen {
+	.miniDialog_mask {
+		background: #000;
+		filter:alpha(opacity:60);
+	}
+}

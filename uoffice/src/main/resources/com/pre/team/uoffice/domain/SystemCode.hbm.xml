@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.pre.team.uoffice.domain.SystemCode"
+		table="t_system">
+		<id name="sysId" type="java.lang.Integer">
+			<column name="sys_id" />
+			<generator class="identity" />
+		</id>
+		<property name="parameterCode" type="java.lang.String">
+			<column name="parameter_code"></column>
+		</property>
+		<property name="parameterName" type="java.lang.String">
+			<column name="parameter_name"></column>
+		</property>
+		<property name="parameterValue" type="java.lang.String">
+			<column name="parameter_value"></column>
+		</property>
+	</class>
+</hibernate-mapping>

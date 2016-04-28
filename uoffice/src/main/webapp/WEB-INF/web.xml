@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <error-page>
+	<error-code>404</error-code>
+	<location>/view/screen/error/error.jsp</location>
+  </error-page>
+  <context-param>
+  	<param-name>contextConfigLocation</param-name>
+	<param-value>classpath*:/spring/ApplicationContext.xml</param-value>
+  </context-param>
+  
+  <listener>
+  	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <!--添加Session监听器-->
+	<listener>
+	<listener-class>com.pre.team.uoffice.listener.SessionListener</listener-class>
+	</listener>
+ <!--添加服务器启动监听器-->
+	<listener>
+	<listener-class>com.pre.team.uoffice.listener.ServerListener</listener-class>
+	</listener>
+ 
+<!-- 
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>com.pre.team.uoffice.filter.EncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+	<filter>  
+	    <filter-name>jspFilter</filter-name>  
+	    <filter-class>com.pre.team.uoffice.filter.JspFilter</filter-class>  
+	</filter>  
+	<filter-mapping>  
+	    <filter-name>jspFilter</filter-name>  
+	    <url-pattern>/ModifyView</url-pattern>
+	</filter-mapping>  
+
+
+ 	<filter> 
+    	<filter-name>struts2</filter-name> 
+    	<filter-class> 
+        	org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter 
+    	</filter-class> 
+  	</filter> 
+  	<filter-mapping>     
+    	<filter-name>struts2</filter-name> 
+    	<url-pattern>/*</url-pattern> 
+  	</filter-mapping> -->
+	
+	
+<!-- sturts2过滤器 --><!-- 改为自己的过滤器 -->
+    <filter>
+    	<filter-name>struts2</filter-name>     
+        <filter-class>com.pre.team.uoffice.filter.ExtendStrutsFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+	
+</web-app>

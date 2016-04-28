@@ -1,0 +1,183 @@
+body {
+	font-family:'Century Gothic',system, Arial, Verdana, Tahoma,'Microsoft Yahei';
+}
+.g-bd{
+	margin-bottom:20px;
+}
+.c-filter{
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border: 1px solid #f1f1f1;
+	background-color: #fafafa;
+	font-family: 'Microsoft Yahei';
+	font-size: 12px;
+}
+.c-filter .filter-list{
+	background-color: #f3f3f3;
+	position: relative;
+}
+.c-filter .filter-nav{
+	float: left;
+	width: 80px;
+	line-height: 20px;
+	padding: 15px 0 15px 10px;
+	text-align: left;
+	color: #333;
+	font-weight: 700;
+	background-color: #f3f3f3;
+	margin: 0;
+}
+.c-filter .filter-content{
+	float: left;
+	width: 928px;
+	padding: 0 30px;
+	background-color: #fafafa;
+}
+.c-filter .filter-items{
+	height: 49px;
+	overflow: hidden;
+	zoom: 1;
+	width: 100%;
+	list-style:none;
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px dotted #d2d2d2;
+}
+.c-filter .filter-items .item{
+	float: left;
+	margin: 15px 30px 0 0;
+	padding: 0 10px;
+	border : 2px solid #FAFAFA;
+	height: 20px;
+	line-height: 20px;
+	cursor: pointer;
+	color: #333;
+	transition: border-color 0.3s ease-in;
+	-webkit-transition: border-color 0.3s ease-in;
+}
+.c-filter .filter-items .item:hover{
+	border-color : #FF4500;	
+}
+.c-filter .filter-items .z-active{
+	border-color : #FFA500;	
+}
+.c-filter .filter-items .item a{
+	text-decoration: none;
+	color: blue;
+}
+
+.g-bd .c-office-container{
+	width: 1080px;
+	margin: 0 auto;
+}
+.g-bd .c-office-list {
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	list-style: none;
+	width: 1100px;
+}
+.c-office-list .item{
+	width : 339px;
+	border: 1px solid #fff;
+	position:relative;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin: 30px 20px 0 0;
+}
+.c-office-list .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.c-office-list .shadow:hover {
+  left: -15px;
+  top: -15px;
+  padding: 15px;
+  border: solid 1px #000;
+  -webkit-box-shadow: 0 0 6px #000;
+  -moz-box-shadow: 0 0 6px #000;
+  box-shadow: 0 0 6px #000;
+  border-radius: 2px;
+}
+.c-office-list .url {
+  display: block;
+  height: 100%;
+}
+.c-office-list .title{
+	margin: 0;
+}
+.c-office-list .box{
+	width: 100%;
+	padding: 40px 0;
+}
+.c-office-list .box:hover{
+	background: #eee;
+}
+.c-office-list .link{
+	color: #000;
+	display: block;
+	text-decoration: none;
+}
+.c-office-list .link .image{
+	width: 100%;
+	height: 200px;
+}
+.c-office-list .name{
+	font-size: 20px;
+	font-family: 'Microsoft Yahei';
+	height: 32px;
+  	line-height: 32px;
+  	margin: 0.5rem auto 0 auto;
+  	width: 100%;
+  	padding-left: 10px;
+  	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.c-office-list .detail .summary{
+	font-size: 14px;
+	width: 200px;
+	color: #999;
+	display: inline-block;
+	padding-left: 10px;
+	*display: inline;
+	*zoom: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.c-office-list .detail .price{
+	color: #ff4965;
+	display: inline-block;
+	width: 117px;
+	text-align: right;
+	font-size: 16px;
+
+}
+.c-office-list .detail .price b{
+	letter-spacing: -1px;
+	font-family: verdana;
+	color: #ff4965;
+	font-size: 24px;
+	margin-right: 4px;
+	font-weight: 700;
+}
+.c-back {
+	width:64px; 
+	height:113px; 
+	position:fixed; 
+	right:15px; 
+	bottom:10px; 
+	display: none;
+	background:url(../../../../img/backtop.png) no-repeat left top;
+}
+.c-back:hover {
+	background-position:-64px;
+}

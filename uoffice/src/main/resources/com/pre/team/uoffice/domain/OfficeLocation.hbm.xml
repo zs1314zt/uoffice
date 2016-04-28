@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.pre.team.uoffice.domain.OfficeLocation"
+		table="t_location">
+		<id name="locationId" type="java.lang.Integer">
+			<column name="location_id" />
+			<generator class="identity" />
+		</id>
+		<property name="locationCode" type="java.lang.String">
+			<column name="location_code"></column>
+		</property>
+		<property name="locationName" type="java.lang.String">
+			<column name="location_name"></column>
+		</property>
+		<property name="remark" type="java.lang.String">
+			<column name="remark"></column>
+		</property>
+	</class>
+</hibernate-mapping>

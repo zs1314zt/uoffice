@@ -1,0 +1,92 @@
+body {
+  font-family: 'Microsoft Yahei';
+}
+
+.m-form {
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  width: 500px;
+  padding: 10px 50px;
+  border-radius: 15px;
+}
+
+/*注册（登录）栏样式*/
+
+.m-form .title {
+  display: block;
+  width: 100%;
+  padding: 40px 0 15px 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: #ef5927;
+  font-weight: bold;
+  border-bottom: 1px solid #aaa;
+}
+
+.m-form .c-group {
+  margin: 20px auto;
+}
+
+.c-label {
+  width: 80px;
+  margin-right: 13px;
+  padding: 12px 0;
+  font-size: 14px;
+  display: block;
+  float: left;
+  text-align: right;
+}
+
+.m-checkbox {
+  width: 100%;
+  float: left;
+  padding-left: 100px;
+  margin-bottom: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.c-input {
+  padding-left: 10px;
+  width: 300px;
+  font-size: 12px;
+  height: 40px;
+}
+
+.m-form .pure-controls {
+  margin: 30px 0 10px 0;
+  font-size: 10px;
+  text-align: center;
+}
+
+/*注册页面的单独样式*/
+
+.c-confirm-cb {
+  width: 15px;
+  height: 15px;
+}
+
+.c-register-btn {
+  width: 315px;
+  height: 40px;
+  background-color: #ef5927;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px auto;
+}
+
+/*手机验证码获取btn*/
+
+.small {
+  width: 200px;
+}
+
+.c-getCode-btn {
+  background-color: #eee;
+  font-size: 12px;
+  height: 46px;
+  width: 100px;
+  border-bottom: 1px solid #eee;
+  margin-left: -4px;
+  padding: 0;
+}

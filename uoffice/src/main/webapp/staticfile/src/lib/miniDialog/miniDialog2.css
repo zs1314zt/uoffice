@@ -1,0 +1,58 @@
+/* customize miniDialog */
+.miniDialog_title {
+	background: #FF4965;
+	box-shadow: none;
+}
+.miniDialog_buttons_area {
+	position: absolute;
+	bottom : 10px;
+	width: 100%;
+	padding: 0;
+	height: auto;
+}
+.miniDialog_content_outer{
+	padding: 12px;
+}
+.miniDialog_content{
+	font-size: 12px;
+	color: #666;
+}
+
+.miniDialog_buttons_area .miniDialog_button {
+	background: #FF4965;
+    border: 1px solid #FF4965;
+	border-radius: 3px;
+	color: #fff;
+	text-shadow: none;
+	padding: 2px 30px;
+	font-size: 12px;
+	font-weight: normal;
+	margin-right: 15px;
+	text-decoration: none;
+}
+
+.miniDialog_buttons_area .miniDialog_button:hover {
+	background: #FF8094;
+	border: 1px solid #FF8094;
+}
+
+.miniDialog_buttons_area .miniDialog_last_button {
+	background: #F3F3F3;
+    border: 1px solid #E6E6E6;
+	color: #666666;
+	text-shadow: none;
+	font-size: 12px;
+	font-weight: normal;
+	margin-right: 0;
+	text-decoration: none;
+}
+
+.miniDialog_buttons_area .miniDialog_last_button:hover {
+	background: #FAFAFA;
+	border: 1px solid #E6E6E6;
+
+}
+
+.miniDialog_close_x .iconfont{
+	font-size: 14px;
+}

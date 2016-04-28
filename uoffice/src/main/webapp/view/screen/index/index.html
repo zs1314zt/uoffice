@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../staticfile/development/base.css">
+    <link rel="stylesheet" href="../../../staticfile/src/biz/index/index.css">
+
+</head>
+<body>
+    <div class="main">
+        <h1>信息</h1>
+        <ul>
+            <li id="s1"></li>
+            <li id="s2"></li>
+            <li id="s3"></li>
+        </ul>
+    </div>
+
+    <script src="../../../staticfile/src/lib/seajs/sea-debug.js"></script>
+    <script src="../../../staticfile/development/base.js"></script>
+    <script>
+        // seajs 的简单配置
+        seajs.config({
+            base : '../../../staticfile/src/biz/',
+            charset: 'utf-8'
+        })
+
+        // 加载入口模块
+
+
+        seajs.use("../../../staticfile/src/biz/index/index.js", function(init){
+
+            init.init();
+        })
+    </script>
+</body>
+</html>
+
+
+
+

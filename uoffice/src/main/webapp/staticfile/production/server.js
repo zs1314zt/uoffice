@@ -1,0 +1,1 @@
+define('server',function(a,n,i){var c=window.location.hash.slice(1);$(".J_nav").on("click",".nav",function(a){var n=$(this),i=n.attr("data-name");$(".J_box").css("display","none").filter("."+i).css("display","block")}),$(".J_nav").find('[data-name="'+c+'"]').trigger("click")});

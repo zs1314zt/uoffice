@@ -1,0 +1,57 @@
+/* 从原core.css 中移出来的 pure.css补充部分 */
+.pure-form-aligned .pure-controls {
+	margin: 1.5em 0 0 11em;
+}
+
+.pure-button {
+	padding: 0.5em 1.5em
+}
+
+.pure-button:hover {
+	color: #fff;
+}
+
+.pure-button-green,.pure-button-main,.pure-button-orange,.pure-button-blue {
+	color: white;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.pure-button-green {
+	background: rgb(28, 184, 65);
+	border-color: rgb(28, 184, 65);
+}
+
+.pure-button-main {
+	background: #ff5482;
+    border-color: #c6375e;
+}
+
+.pure-button-orange {
+	background: rgb(223, 117, 20);
+	border-color: rgb(223, 117, 20);
+}
+
+.pure-button-blue {
+	background: rgb(66, 184, 221);
+	border-color: rgb(66, 184, 221);
+}
+
+/* reset pure input focus border color for beibei */
+.pure-form input[type="text"]:focus,
+.pure-form input[type="password"]:focus,
+.pure-form input[type="email"]:focus,
+.pure-form input[type="url"]:focus,
+.pure-form input[type="date"]:focus,
+.pure-form input[type="month"]:focus,
+.pure-form input[type="time"]:focus,
+.pure-form input[type="datetime"]:focus,
+.pure-form input[type="datetime-local"]:focus,
+.pure-form input[type="week"]:focus,
+.pure-form input[type="number"]:focus,
+.pure-form input[type="search"]:focus,
+.pure-form input[type="tel"]:focus,
+.pure-form input[type="color"]:focus,
+.pure-form select:focus,
+.pure-form textarea:focus {
+	border-color: #fa0d66;
+}

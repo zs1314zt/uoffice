@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.pre.team.uoffice.domain.Message"
+		table="t_message">
+		<id name="messId" type="java.lang.Integer">
+			<column name="mess_id" />
+			<generator class="identity" />
+		</id>
+		<property name="userId" type="java.lang.Integer">
+			<column name="user_id"></column>
+		</property>
+		<property name="officeId" type="java.lang.Integer">
+			<column name="office_id"></column>
+		</property>
+		<property name="messContent" type="java.lang.String">
+			<column name="mess_content"></column>
+		</property>
+		<property name="messTime" type="java.util.Date">
+			<column name="mess_time"></column>
+		</property>
+		<property name="remark" type="java.lang.String">
+			<column name="remark"></column>
+		</property>
+	</class>
+</hibernate-mapping>

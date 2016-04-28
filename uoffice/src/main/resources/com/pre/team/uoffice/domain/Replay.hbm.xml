@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.pre.team.uoffice.domain.Replay"
+		table="t_replay">
+		<id name="replayId" type="java.lang.Integer">
+			<column name="replay_id" />
+			<generator class="identity" />
+		</id>
+		<property name="userName" type="java.lang.String">
+			<column name="user_name"></column>
+		</property>
+		<property name="phone" type="java.lang.String">
+			<column name="phone"></column>
+		</property>
+		<property name="city" type="java.lang.String">
+			<column name="city"></column>
+		</property>
+		<property name="pubDate" type="java.util.Date">
+			<column name="pub_date"></column>
+		</property>
+		<property name="message" type="java.lang.String">
+			<column name="message"></column>
+		</property>
+	</class>
+</hibernate-mapping>

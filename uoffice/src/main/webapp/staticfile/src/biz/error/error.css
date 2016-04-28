@@ -1,0 +1,37 @@
+body{
+	font-family: 'Love Ya Like A Sister', cursive;
+}
+body{
+	background:#eaeaea;
+}	
+.wrap{
+	margin:0 auto;
+	width:1000px;
+}
+.logo{
+	text-align:center;
+	margin-top:150px;
+}
+.logo img{
+	width:350px;
+}
+.logo p{
+	color:#272727;
+	font-size:40px;
+	margin-top:1px;
+}	
+.logo p span{
+	color:lightgreen;
+}	
+.footer{
+	color:black;
+	text-align:center;
+	font-size:30px;
+}	
+.footer a{
+	color:rgb(114, 173, 38);
+}
+
+
+
+
